@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin:2rem;
+    gap: 5rem;
+    height: 100vh;
+}
+
+.heading{
+    font-size: 3rem;
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+}
+
+.second-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.userText{
+    padding: 20px 80px;
+    border-radius: 10px;
+    height: 60px;
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+.container-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.btn{
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    color: #333;
+    border-radius: 10px;
+    border:none;
+    box-shadow: 0.2px 0.5px #555;
+}
+.btn.submit{
+    background-color: #ddd;
+    color:#333;
+}
+.btn.clear{
+    background-color: #ff122e;
+    color: white;
+    border: none;
+}
+
+.ul-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0.10rem;
+    background-color: #eee;
+    padding: 0;
+    margin: 0;
+    border-radius: 20px;
+    border-color: #ddd;
+    list-style-type: square;
+    list-style-position: inside;
+}
+
+li{
+    padding: 30px 150px;
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: left;
+}
