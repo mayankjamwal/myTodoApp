@@ -1,32 +1,26 @@
-console.log("runn...");
-const submitBtn = document.getElementsByClassName("submit")[0];
-const clearBtn = document.getElementsByClassName("clear")[0];
-const userInput = document.getElementsByClassName("userText")[0];
-const head = document.getElementsByClassName("heading")[0];
-// console.log(head);
-// console.log(submitBtn);
-
-submitBtn.addEventListener("click",submitUserData);
-clearBtn.addEventListener("click",clearUserData);
+const addBtn = document.getElementsByClassName("input-btn")[0];
+addBtn.addEventListener('click',addItem);
 
 
-function submitUserData(){
-  const li = document.createElement('li');
-  li.textContent = userInput.value;
-  const ul = document.querySelector('.ul-list');
-  ul.appendChild(li);
-  userInput.value = ''; 
-}
 
-function clearUserData(){
-    const li = document.querySelector("li");
-    userInput.value = '';
-    if(li){
-        li.remove();
-    }
-    else{
-        console.error("Error: No list Item is present.");
-    }
+function addItem(e){
     
+    e.preventDefault();
+    const list = document.getElementById("list-1");
+    const listItem = document.createElement('li');
+    listItem.className = `item-${x}`;
+    const text = document.getElementById("input").value;
+    listItem.innerHTML = text;
+    list.appendChild(listItem);
+
+    //create Deletebutton
+    const deleteBtn = document.createElement("button");
+    deleteBtn.className = "delete-btn";
+    console.log(listItem);
+    deleteBtn.innerHTML = "X";
+    listItem.appendChild(deleteBtn);
 }
 
+function deleteItem(e){
+    console.log(e.target);
+}

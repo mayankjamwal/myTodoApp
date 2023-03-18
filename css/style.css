@@ -2,84 +2,144 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    margin:2rem;
-    gap: 5rem;
-    height: 100vh;
-}
-
-.heading{
-    font-size: 3rem;
-    font-weight: 800;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #333;
-}
-
-.second-container{
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    justify-content: center;
-}
-
-.userText{
-    padding: 20px 80px;
-    border-radius: 10px;
-    height: 60px;
-    font-size: 1.5rem;
-    width: 100%;
-}
-
-.container-btn{
-    display: flex;
-    flex-direction: row;
+nav{
+    display:flex;
     justify-content: space-around;
+    padding: 40px 20px;
+    align-items: center;
+    background-color: royalblue;
+    flex-wrap: nowrap;
+    gap: 10px;
+    position: sticky;
+    top:0;
 }
 
-.btn{
-    padding: 15px 30px;
-    font-size: 1.5rem;
-    color: #333;
-    border-radius: 10px;
-    border:none;
-    box-shadow: 0.2px 0.5px #555;
-}
-.btn:hover{
-    cursor: pointer;
+.header{
+    font-size: 2rem;
+    color: #fefefe;
+    /* flex:1; */
 }
 
-.btn.submit{
-    background-color: #ddd;
-    color:#333;
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    
 }
-.btn.clear{
-    background-color: #ff122e;
-    color: white;
+
+#search{
+    font-size: 1.2rem;
+    padding:10px 20px;
     border: none;
+    border-radius: 10px 0px 0px 10px;
+    box-shadow: 0.2px 0.1px 3px #555; 
+    transition: background-color 0.3s ease-in-out;   
+}
+#search:hover{
+    background-color: #eee;
 }
 
-.ul-list{
+.search-btn{
+    border-radius: 0px 10px 10px 0px;
+    background-color: #777;
+    box-shadow: 0.2px 0.1px 2px #555;
+    transition: background-color 0.3s ease-in-out;
+}
+.search-btn:hover{
+    cursor: pointer;
+    background-color: #333;   
+}
+
+.search-btn svg{
+    width: 40px;
+    height: 40px;
+    color: white;    
+}
+
+main{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding: 0;
-    margin: 0;
-    border-radius: 20px;
-    list-style-type:disc;
-    list-style-position: inside;
-    flex-wrap: wrap;
+    align-items:center;
+    border: 0.5px solid #555;
+    gap: 30px;
+}
+
+.main-header{
+    font-size: 1.5rem;
+    color: #333;
+    align-self: flex-start;
+    margin-top: 4rem;
+    margin-left: 2rem;
+}
+
+.add-item-input{
+    display: flex;
+    gap: 50px;
+    align-self: flex-start;
+    flex-wrap: nowrap;
+    margin-left: 1rem;
+    margin-top: 2rem;
+}
+#input{
+
+    font-size: 1.3rem;
+    padding: 10px 30px;
+    margin: 0px 20px;
+    border: 0.2px solid #333;
+    background-color: #fefefe;
+}
+
+.input-btn{
+    padding: 0px 30px;
+    font-size: 1.2rem;
+    color: #fefefe;
+    background-color: #333;
+    border: none;
+    box-shadow: 0.1px 0.1px 2px #333;
+}
+.input-btn:hover{
+    cursor: pointer;
+    color: #fff;
+}
+
+.list-item{
+    
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    margin: 0px 20px;
+}
+
+.un-list{
+    border-top: 0.1px solid #555;
+    list-style: none;
+    padding: 20px;
+    margin: 10px 20px;
 }
 
 li{
-    padding: 10px 150px;
-    font-size: 2rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: left;   
-    
+    border: 0.05px solid #555;
+    padding: 15px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.delete-btn{
+    float: right;
+    padding: 4px;
+    background-color: #ff1212;
+    color: #fefefe;
+    border: none;
+}
+.delete-btn:hover{
+    cursor: pointer;
+    color: #fff;
 }
